@@ -17,10 +17,17 @@
   },
   "homepage": "https://github.com/AleksandrMaskalenko/dashboard-javascript#readme",
   "dependencies": {
+    "angu-fixed-header-table": "1.2.1",
     "angular": "1.6.4",
     "angular-chart.js": "1.1.1",
     "chart.js": "2.5.0",
+    "dateformat": "2.0.0",
     "jquery": "3.2.1",
-    "materialize-css": "0.98.2"
+    "materialize-css": "0.98.2",
+    "socket.io-client": "2.0.1"
+  },
+  "devDependencies": {
+    "gulp": "3.9.1",
+    "gulp-concat": "2.6.1"
   }
 }

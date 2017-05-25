@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html data-ng-app="myApp">
+<head>
+    <meta charset="UTF-8">
+    <title>Dashboard</title>
+
+
+    <link rel="stylesheet" href="css/style.css">
+
+
+
+</head>
+
+<body data-ng-controller="Controller">
+
+<div class="main">
+
+    <div class="navbar-fixed">
+        <nav class="nav-extended z-depth-0">
+            <div class="nav-wrapper teal darken-3">
+                <ul>
+                    <li><a href="#!"><i class="material-icons">menu</i></a></li>
+                    <li><a href="#!"><span>Dashboard</span></a></li>
+                </ul>
+                <ul class="right">
+                    <li><a href="#!"><i class="material-icons">apps</i></a></li>
+                    <li><a href="#!"><i class="material-icons">help</i></a></li>
+                </ul>
+            </div>
+            <div class="nav-content teal darken-3 hide">
+                <div class="container">
+                    <h6>Dashboard</h6>
+                </div>
+            </div>
+        </nav>
+    </div>
+
+
+    <div class="container">
+        <div class="row">
+
+            <div class="col s12 m6 ">
+                <div class="card white">
+     
+                    <div class="card-content pie">
+                        
+                         <div class="timer">
+                            <label id="hours">00</label>:
+                            <label id="minutes">00</label>:
+                            <label id="seconds">00</label>
+                        </div>
+
+                        <div class="title">
+                            <h5>Event result for the last hour</h5>
+                        </div>
+
+                        <div>
+                            <canvas height="120" id="eventPie" class="chart chart-pie" data-chart-data="eventData"
+                                    data-chart-labels="eventLabels"></canvas>
+                        </div>
+                        
+                        
+
+                        
+                        <div class="input-field col s2">
+                            <select id="limit">
+                                <option value="30000">0.5 min</option>
+                                <option value="60000">1 min</option>
+                                <option value="120000">2 min</option>
+                                <option value="300000" selected>5 min</option>
+                                <option value="600000">10 min</option>
+                                <option value="1200000">20 min</option>
+                                <option value="2400000">40 min</option>
+                                <option value="3600000">60 min</option>
+                            </select>
+                            <label>Choose limit:</label>
+                          </div>
+                        
+                        <div class="text-limit">
+                            <p>limit event count: {{EventCountLimited}} psc.</p>
+                        </div>
+
+                        <div>
+                            <ul class="color_picker">
+                                <li class="color_item">started: </li>
+                                <li class="color_item" style="background:#99bbcd"><div class="color-preview"  style="background:#99bbcd"></div></li>
+
+                                <li class="color_item">success:</li>
+                                <li class="color_item" style="background:#dcdcdc"><div class="color-preview"  style="background:#dcdcdc"></div></li>
+
+
+                                <li class="color_item">error:</li>
+                                <li class="color_item" style="background:#f7464a"><div class="color-preview"  style="background:#f7464a"></div></li>
+
+                                <li class="color_item">failure:</li>
+                                <li class="color_item" style="background:#46bfbd"><div class="color-preview"  style="background:#46bfbd"></div></li>
+
+                            </ul>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="col s12 m6">
+                <div class="card white">
+                    <div class="card-content pie">
+
+                        <div class="title">
+                            <h5>Component result for all time</h5>
+                        </div>
+
+                        <div>
+                            <canvas height="120" id="componentBar" class="chart chart-bar" data-chart-data="componentData"
+                                    data-chart-labels="componentLabel" ></canvas>
+                        </div>
+                        <div>
+                            <p>Total event count: {{totalEventCount}} psc.</p>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        
+        <div class="row">
+        <div class="col s12 m12">
+        <div class="card white">
+            <div class="card-content bar">
+
+                <div class="title">
+                    <h5>Requirement result for all time</h5>
+                </div>
+
+                <div>
+                    <canvas height="100" id="requirementBar" class="chart chart-bar" chart-data="requirementData"
+                            chart-labels="requirementLabel" chart-series="eventLabels" ></canvas>
+                </div>
+
+                <div>
+                    <ul class="color_picker">
+                        <li class="color_item">started: </li>
+                        <li class="color_item" style="background:#99bbcd"><div class="color-preview"  style="background:#99bbcd"></div></li>
+
+                        <li class="color_item">success:</li>
+                        <li class="color_item" style="background:#dcdcdc"><div class="color-preview"  style="background:#dcdcdc"></div></li>
+
+
+                        <li class="color_item">error:</li>
+                        <li class="color_item" style="background:#f7464a"><div class="color-preview"  style="background:#f7464a"></div></li>
+
+                        <li class="color_item">failure:</li>
+                        <li class="color_item" style="background:#46bfbd"><div class="color-preview"  style="background:#46bfbd"></div></li>
+
+                    </ul>
+                </div>
+            </div>
+        </div>
+        </div>
+        </div>
+        
+        <div class="row">
+        <div class="col s12 m12">
+        
+        <div class="card white">
+            <div class="card-content bar">
+
+                <div class="title">
+                    <h5>Requirement result for all time</h5>
+                </div>
+
+                <div>
+                    <canvas height="100" id="line" class="chart chart-line" chart-data="dataLineChart"
+                            chart-labels="labelsLineChart" chart-series="eventLabels">
+                    </canvas>
+                </div>
+
+                <div>
+                    <ul class="color_picker">
+                        <li class="color_item">started: </li>
+                        <li class="color_item" style="background:#99bbcd"><div class="color-preview"  style="background:#99bbcd"></div></li>
+
+                        <li class="color_item">success:</li>
+                        <li class="color_item" style="background:#dcdcdc"><div class="color-preview"  style="background:#dcdcdc"></div></li>
+
+
+                        <li class="color_item">error:</li>
+                        <li class="color_item" style="background:#f7464a"><div class="color-preview"  style="background:#f7464a"></div></li>
+
+                        <li class="color_item">failure:</li>
+                        <li class="color_item" style="background:#46bfbd"><div class="color-preview"  style="background:#46bfbd"></div></li>
+
+                    </ul>
+                </div>
+                        
+                        <div class="input-field col s2">
+                            <select id="type">
+                              <option value="0">started</option>    
+                              <option value="1">success</option>
+                              <option value="2">error</option>
+                              <option value="3">failure</option>
+                              <option value="4" selected>all</option>
+                            </select>
+                            <label>Event type:</label>
+                        </div>
+            </div>
+        </div>
+            </div>
+            </div>
+            
+    
+        <div class="row">
+        <div class="col s12 m12">
+        <div class="card white">
+            <div class="card-content bar">
+            <table class="table bordered" fixed-header>
+                        <thead>
+                        <tr>
+                            <th>time</th>
+                            <th>event</th>
+                            <th>requirement</th>
+                            <th>component</th>
+                            <th>title</th>
+                        </tr>
+                        </thead>
+
+                        <tbody>
+                        <tr ng-repeat="event in events">
+                            <td>{{event.time | date: "dd.MM.y h:mm:ss"}}</td>
+                            <td>{{event.event}}</td>
+                            <td>{{event.testCase.requirement}}</td>
+                            <td>{{event.testCase.component}}</td>
+                            <td>{{event.testCase.title}}</td>
+                        </tr>
+                        </tbody>
+                       
+            </table>
+        </div>
+            </div>
+            </div>
+            </div>
+            
+    </div>
+</div>
+
+<script src="js/scripts.js"></script>
+
+</body>
+</html>
