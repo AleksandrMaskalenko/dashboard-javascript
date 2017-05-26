@@ -1,14 +1,6 @@
 angular.module('myApp', ['chart.js', 'anguFixedHeaderTable'])
 
 .controller('Controller', function ($scope) {
-
-
-    let labels = ["started", "success", "error", "failure"];
-
-    $scope.eventLabels = labels;
-
-    let allEventArray = [];
-
     
     let socket = io('http://testevents.neueda.lv:80', {
         path: '/live'
@@ -16,25 +8,30 @@ angular.module('myApp', ['chart.js', 'anguFixedHeaderTable'])
 
     socket.on('test', function(data) {
 
-        allEvent(data);
+        $scope.events = allEvent(data);
+        $scope.totalEventCount = allEventArray.length;
         getLimit(data);
         getAllLabels(data);
-        getEventData();
-        getComponentData();
-        getRequirementData();
-        getLineChartData(data);
+        $scope.eventData = getEventData();
+        $scope.componentData = getComponentData();
+        $scope.requirementData = getRequirementData();
+        $scope.dataLineChart = getLineChartData(data);
+        $scope.$apply();
     });
 
+    let labels = ["started", "success", "error", "failure"];
 
-    let endLimit;
-    let limit = 300000;
+    $scope.eventLabels = labels;
+
+    let allEventArray = [];
 
     function allEvent(data) {
         allEventArray.push(data);
-        $scope.events = allEventArray;
-        $scope.totalEventCount = allEventArray.length;
-
+        return allEventArray;
     }
+
+    let endLimit;
+    let limit = 300000;
 
     function getLimit(data) {
         endLimit = Date.parse(data.time) - limit;
@@ -50,51 +47,39 @@ angular.module('myApp', ['chart.js', 'anguFixedHeaderTable'])
 
         $scope.componentLabel = [...componentLabelsSet];
         $scope.requirementLabel = [...requirementLabelsSet];
-        if (millisecondsArray[0] === undefined) {
-            getLabelsLineChart(data);
+        if (millisecondsArray.length === 0) {
+            $scope.labelsLineChart = getLabelsLineChart(data);
         }
-        $scope.$apply();
     }
 
     function getEventData() {
 
-        let dataArray = [0, 0, 0, 0];
+        let dataArray = [];
 
-        allEventArray.forEach(function (eve) {
-            if(Date.parse(eve.time) >= endLimit) {
+        for (let i = 0; i < labels.length; i++) {
+            let filteredArray = allEventArray
+                .filter((el) => Date.parse(el.time) >= endLimit)
+                .filter((el) => el.event === labels[i])
+                .length;
 
-                for (let i = 0; i < labels.length; i++) {
-                    if (eve.event === labels[i]) {
-                        dataArray[i]++;
-                    }
-                }
-            }
-        });
+            dataArray.push(filteredArray);
+        }
 
         $scope.EventCountLimited = dataArray.reduce((a, b) => a + b, 0);
-        $scope.eventData = dataArray;
-
-        $scope.$apply();
-        
+        return dataArray;
     }
 
     function getComponentData() {
         let componentDataArray = [];
 
         [...componentLabelsSet].forEach(function (component) {
-            let count = 0;
-
-            allEventArray.forEach(function(event) {
-                if(event.testCase.component === component) {
-                    count++;
-                }
-            });
+            let count = allEventArray
+                .filter((el) => el.testCase.component === component)
+                .length;
             componentDataArray.push(count);
         });
 
-        $scope.componentData = [componentDataArray];
-        $scope.$apply();
-        
+        return [componentDataArray];
     }
 
     function getRequirementData() {
@@ -109,8 +94,7 @@ angular.module('myApp', ['chart.js', 'anguFixedHeaderTable'])
             }
         });
 
-        $scope.requirementData = requirementDataArray;
-        $scope.$apply();
+         return requirementDataArray;
     }
 
     let arrayLabelsTime = [];
@@ -137,8 +121,7 @@ angular.module('myApp', ['chart.js', 'anguFixedHeaderTable'])
                 arrayLabelsTime.push(str);
             });
 
-        $scope.labelsLineChart = arrayLabelsTime;
-        $scope.$apply();
+        return arrayLabelsTime;
     }
 
 
@@ -151,52 +134,39 @@ angular.module('myApp', ['chart.js', 'anguFixedHeaderTable'])
         arrayLabelsTime.push(str);
 
         $scope.labelsLineChart = arrayLabelsTime;
-        $scope.$apply();
     }
 
 
     let lineChartData = [[], [], [], []];
+    let stepArray = [];
 
     function getLineChartData(data) {
-        let allTypeLine = [[], [], [], []];
+        stepArray.push(data);
 
         let objectSec = Date.parse(data.time);
-
-        let labelsLimit = 0;
 
         if ((lineChartData[0].length === countStep) && (millisecondsArray[countStep - 1] + 30000 < objectSec)) {
             for (let i = 0; i < lineChartData.length; i++) {
                 lineChartData[i].shift();
             }
             updateMillisecondsArray();
-            labelsLimit = millisecondsArray[0] - 30000;
         }
 
         let size = lineChartData[0].length;
 
         if(millisecondsArray[size] < objectSec) {
 
-            for (let j = 0; j < size + 1; j++) {
-                for (let i = 0; i < labels.length; i++) {
-                    let filteredArray = allEventArray
-                        .filter((el) => (Date.parse(el.time) < millisecondsArray[j]) && (Date.parse(el.time) > labelsLimit))
-                        .filter((el) => el.event === labels[i]);
+            for (let i = 0; i < labels.length; i++) {
+                let filteredArray = stepArray
+                    .filter((el) => el.event === labels[i]);
 
-                    allTypeLine[i].push(filteredArray.length);
-                }
-                labelsLimit = millisecondsArray[j];
+                lineChartData[i].push(filteredArray.length);
             }
-
-            lineChartData = allTypeLine;
-
-            $scope.dataLineChart = lineChartData;
-            $scope.$apply();
-
+            stepArray = [];
         }
+
+        return lineChartData;
     }
-
-    $scope.dataLineChart = lineChartData;
-
 
     $(document).ready(function() {
         $('select').material_select();
@@ -210,7 +180,7 @@ angular.module('myApp', ['chart.js', 'anguFixedHeaderTable'])
         let newArray = [[0], [0], [0], [0]];
         let value = $(this).val();
 
-        if(value === 4) {
+        if(value == 4) {
             $scope.dataLineChart = lineChartData;
             $scope.$apply();
         } else {
@@ -221,27 +191,22 @@ angular.module('myApp', ['chart.js', 'anguFixedHeaderTable'])
         }
     });
 
-    let minutesLabel = document.getElementById("minutes");
-    let secondsLabel = document.getElementById("seconds");
     let totalSeconds = 0;
     setInterval(setTime, 1000);
 
-    function setTime()
-    {
+    function setTime() {
         ++totalSeconds;
-        secondsLabel.innerHTML = pad(totalSeconds%60);
-        minutesLabel.innerHTML = pad(parseInt(totalSeconds/60));
+        $scope.seconds = pad(totalSeconds%60);
+        $scope.minutes = pad(parseInt(totalSeconds/60));
+        $scope.hours = pad(parseInt(totalSeconds/3600));
+        $scope.$apply();
     }
 
-    function pad(val)
-    {
+    function pad(val) {
         let valString = val + "";
-        if(valString.length < 2)
-        {
+        if(valString.length < 2) {
             return "0" + valString;
-        }
-        else
-        {
+        } else {
             return valString;
         }
     }

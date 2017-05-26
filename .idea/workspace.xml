@@ -2,102 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a0bdee1d-a3be-424d-8ee9-a5714affc5e9" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/gulpfile.js" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/css/icons.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/css/style.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/index.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/js/angu-fixed-header-table.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/js/controller.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/js/socket.io.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-chart.js/node_modules/chart.js/samples/AnimationCallbacks/progress-bar.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-chart.js/node_modules/chart.js/samples/bar-horizontal.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-chart.js/node_modules/chart.js/samples/bar-multi-axis.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-chart.js/node_modules/chart.js/samples/bar-stacked.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-chart.js/node_modules/chart.js/samples/bar.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-chart.js/node_modules/chart.js/samples/bubble.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-chart.js/node_modules/chart.js/samples/combo-bar-line.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-chart.js/node_modules/chart.js/samples/data_label_combo-bar-line.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-chart.js/node_modules/chart.js/samples/different-point-sizes.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-chart.js/node_modules/chart.js/samples/doughnut.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-chart.js/node_modules/chart.js/samples/line-cubicInterpolationMode.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-chart.js/node_modules/chart.js/samples/line-customTooltips.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-chart.js/node_modules/chart.js/samples/line-legend.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-chart.js/node_modules/chart.js/samples/line-logarithmic.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-chart.js/node_modules/chart.js/samples/line-multi-axis.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-chart.js/node_modules/chart.js/samples/line-multiline-labels.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-chart.js/node_modules/chart.js/samples/line-non-numeric-y.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-chart.js/node_modules/chart.js/samples/line-skip-points.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-chart.js/node_modules/chart.js/samples/line-stacked-area.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-chart.js/node_modules/chart.js/samples/line-stepped.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-chart.js/node_modules/chart.js/samples/line-x-axis-filter.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-chart.js/node_modules/chart.js/samples/line.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-chart.js/node_modules/chart.js/samples/pie-customTooltips.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-chart.js/node_modules/chart.js/samples/pie.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-chart.js/node_modules/chart.js/samples/polar-area.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-chart.js/node_modules/chart.js/samples/radar-skip-points.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-chart.js/node_modules/chart.js/samples/radar.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-chart.js/node_modules/chart.js/samples/scatter-logX.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-chart.js/node_modules/chart.js/samples/scatter-multi-axis.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-chart.js/node_modules/chart.js/samples/scatter.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-chart.js/node_modules/chart.js/samples/timeScale/combo-time-scale.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-chart.js/node_modules/chart.js/samples/timeScale/line-time-point-data.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-chart.js/node_modules/chart.js/samples/timeScale/line-time-scale.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-chart.js/node_modules/chart.js/samples/tooltip-hooks.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-chart.js/test/fixtures/29-tabs.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-chart.js/test/fixtures/51-pie-update-colours.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-chart.js/test/fixtures/54-not-enough-colours.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-chart.js/test/fixtures/57-hex-colours.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-chart.js/test/fixtures/bubble.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-chart.js/test/fixtures/charts.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-chart.js/test/fixtures/configure-line-chart.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-chart.js/test/fixtures/custom-directive.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-chart.js/test/fixtures/dataset-override.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-chart.js/test/fixtures/horizontal-bar-chart.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-chart.js/test/fixtures/options-override.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-chart.js/test/fixtures/scatter.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-chart.js/test/index.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/materialize-css/node_modules/hammerjs/tests/manual/compute_touch_action.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/materialize-css/node_modules/hammerjs/tests/manual/input.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/materialize-css/node_modules/hammerjs/tests/manual/log.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/materialize-css/node_modules/hammerjs/tests/manual/multiple.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/materialize-css/node_modules/hammerjs/tests/manual/nested.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/materialize-css/node_modules/hammerjs/tests/manual/simulator-googlemaps.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/materialize-css/node_modules/hammerjs/tests/manual/simulator.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/materialize-css/node_modules/hammerjs/tests/manual/touchaction.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/materialize-css/node_modules/hammerjs/tests/manual/visual.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/materialize-css/node_modules/hammerjs/tests/unit/index.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/materialize-css/test/html/badges.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/materialize-css/test/html/buttons.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/materialize-css/test/html/cards.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/materialize-css/test/html/carousel.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/materialize-css/test/html/chips.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/materialize-css/test/html/collapsible.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/materialize-css/test/html/dropdown.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/materialize-css/test/html/fixed_navbar.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/materialize-css/test/html/forms.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/materialize-css/test/html/materialbox.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/materialize-css/test/html/multiple_modals.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/materialize-css/test/html/multiple_sidenav.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/materialize-css/test/html/overlayZindex.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/materialize-css/test/html/pushpin.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/materialize-css/test/html/scrollfire.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/materialize-css/test/html/scrollspy.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/materialize-css/test/html/tabs.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/materialize-css/test/html/waves.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/materialize-css/tests/spec/autocomplete/autocompleteFixture.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/materialize-css/tests/spec/cards/cardsFixture.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/materialize-css/tests/spec/chips/chipsFixture.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/materialize-css/tests/spec/collapsible/collapsible.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/materialize-css/tests/spec/dropdown/dropdownFixture.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/materialize-css/tests/spec/materialbox/materialboxFixture.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/materialize-css/tests/spec/scrollFire/scrollFireFixture.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/materialize-css/tests/spec/select/selectFixture.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/materialize-css/tests/spec/sideNav/sideNavFixture.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/materialize-css/tests/spec/tabs/tabsFixture.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/materialize-css/tests/spec/tooltip/tooltipFixture.html" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/package.json" afterPath="$PROJECT_DIR$/package.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/index.html" afterPath="$PROJECT_DIR$/src/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/js/controller.js" afterPath="$PROJECT_DIR$/src/js/controller.js" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -112,8 +19,18 @@
       <file leaf-file-name="controller.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/js/controller.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="225">
-              <caret line="15" column="0" lean-forward="false" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
+            <state relative-caret-position="108">
+              <caret line="25" column="27" lean-forward="true" selection-start-line="25" selection-start-column="27" selection-end-line="25" selection-end-column="27" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/index.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="765">
+              <caret line="51" column="0" lean-forward="false" selection-start-line="51" selection-start-column="0" selection-end-line="51" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -141,6 +58,7 @@
       <find>labels</find>
       <find>requirement</find>
       <find>limit</find>
+      <find>$apply</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -160,8 +78,8 @@
         <option value="$PROJECT_DIR$/index.html" />
         <option value="$PROJECT_DIR$/src/css/style.css" />
         <option value="$PROJECT_DIR$/gulpfile.js" />
-        <option value="$PROJECT_DIR$/src/index.html" />
         <option value="$PROJECT_DIR$/package.json" />
+        <option value="$PROJECT_DIR$/src/index.html" />
         <option value="$PROJECT_DIR$/src/js/controller.js" />
       </list>
     </option>
@@ -196,7 +114,6 @@
     </navigator>
     <panes>
       <pane id="Scope" />
-      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -233,12 +150,17 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="dist" />
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="js" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
+      <pane id="PackagesPane" />
       <pane id="Scratches" />
     </panes>
   </component>
@@ -662,14 +584,18 @@
       <workItem from="1495392599651" duration="1522000" />
       <workItem from="1495605840221" duration="39639000" />
       <workItem from="1495691655382" duration="7876000" />
+      <workItem from="1495722403461" duration="723000" />
+      <workItem from="1495773835708" duration="14469000" />
+      <workItem from="1495791416269" duration="378000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="50712000" />
+    <option name="totallyTimeSpent" value="66282000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1440" height="813" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -679,20 +605,20 @@
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Properties" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.26037195" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.27110156" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -714,6 +640,38 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/src/js/controller.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="510">
+          <caret line="34" column="0" lean-forward="true" selection-start-line="34" selection-start-column="0" selection-end-line="34" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="765">
+          <caret line="51" column="0" lean-forward="true" selection-start-line="51" selection-start-column="0" selection-end-line="51" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/js/controller.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/js/controller.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/js/controller.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -747,51 +705,15 @@
     <entry file="file://$PROJECT_DIR$/template/gulpfile.js" />
     <entry file="file://$PROJECT_DIR$/index.html" />
     <entry file="file://$PROJECT_DIR$/template/index.html" />
-    <entry file="file://$PROJECT_DIR$/node_modules/request/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/node_modules/request/request.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/node_modules/request/lib/tunnel.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/node_modules/request/lib/querystring.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/node_modules/request/lib/auth.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/node_modules/request/index.js" />
+    <entry file="file://$PROJECT_DIR$/node_modules/request/request.js" />
+    <entry file="file://$PROJECT_DIR$/node_modules/request/lib/tunnel.js" />
+    <entry file="file://$PROJECT_DIR$/node_modules/request/lib/querystring.js" />
+    <entry file="file://$PROJECT_DIR$/node_modules/request/lib/auth.js" />
     <entry file="file://$PROJECT_DIR$/gulpfile.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="15">
           <caret line="1" column="4" lean-forward="false" selection-start-line="1" selection-start-column="4" selection-end-line="1" selection-end-column="4" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -799,7 +721,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="576">
           <caret line="248" column="0" lean-forward="true" selection-start-line="248" selection-start-column="0" selection-end-line="248" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -807,7 +728,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -815,7 +735,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="595">
           <caret line="66" column="14" lean-forward="false" selection-start-line="66" selection-start-column="14" selection-end-line="66" selection-end-column="14" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -823,22 +742,21 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="375">
           <caret line="25" column="32" lean-forward="false" selection-start-line="25" selection-start-column="32" selection-end-line="25" selection-end-column="32" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3750">
-          <caret line="250" column="7" lean-forward="true" selection-start-line="250" selection-start-column="7" selection-end-line="250" selection-end-column="7" />
+        <state relative-caret-position="765">
+          <caret line="51" column="0" lean-forward="false" selection-start-line="51" selection-start-column="0" selection-end-line="51" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/js/controller.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="15" column="0" lean-forward="false" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
+        <state relative-caret-position="108">
+          <caret line="25" column="27" lean-forward="true" selection-start-line="25" selection-start-column="27" selection-end-line="25" selection-end-column="27" />
           <folding />
         </state>
       </provider>
